@@ -6,10 +6,10 @@ var replace = require('rollup-plugin-replace');
 const Bundler = function() {
     this.cache;
 
-    this.bundle = (entry, outro) => {
+    this.bundle = (entry, outro, useCache) => {
         const rollupOptions = {
             entry: entry,
-            cache: this.cache,
+            cache: useCache ? this.cache : null,
             indent: true,
 
             plugins: [

@@ -16,7 +16,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "reproduction": "node ./index.js"
+    "withCache": "node ./withCache.js",
+    "withoutCache": "node ./withoutCache.js"
   },
   "repository": {
     "type": "git",
